@@ -7,16 +7,135 @@ using namespace std;
 
 int main()
 {
+/*
+    
+    // 1 przyklad
+
+    int tab[10]; 
+    tab[0] = 9; 
+    for(int i = 0; i < 10; i++)
+    {
+        cout << "Wartosc: " << tab[i] << endl;
+	}
+
+    // 2 przyklad 
+
+    const int tableSize = 10; 
+	int tab[tableSize];
+    for(int i = 0; i < tableSize; i++)
+    {
+        tab[i] = i;
+        cout << tab[i] << endl; 
+    }
+
+    // 3 przyklad 
+
+
+    const int tableSize = 10; 
+    int tab[tableSize] = { 0 }; 
+    for (int i = 0; i < tableSize; i++)
+        cout << tab[i] << "   ";
+    cout << endl; 
+    int tab2[tableSize] = { 99, 88 };
+    for(int i = 0; i < tableSize; i++)
+		cout << tab2[i] << "   ";
+    cout << endl;
+    int tab3[tableSize] = { 99, 88 };
+    for (int i = 0; i < tableSize; i++)
+        cout << tab3[i] << "   ";
+
+    // 4 przyklad 
+
+    int n; 
+	cout << "Podaj wielkosc tablicy: ";
+    cin >> n; 
+    int* table = new int[n];
+    for (int i = 0; i < n; i++)
+    {
+        table[i] = i;
+        cout << table[i] << endl; 
+	}
+
+    // 5 przyklad 
+
+    int tab[2][3] = {  {1, 2, 3}, {4, 5, 6}   };
+	cout << "Elementy macierzy: " << endl;
+    for (int i = 0; i < 2; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+			cout << tab[i][j] << "   ";
+            if (j == 2)
+                cout << endl;
+        }
+    }
+
+
+    // 6 przyklad 
+
+    int tab[5][5] = { 0 }; 
+	cout << "Elementy macierzy: " << endl;
+    for (int i = 0; i < 5; i++)
+    {
+        for (int j = 0; j < 5; j++)
+        {
+			cout << tab[i][j] << "   ";
+            if (j == 4)
+                cout << endl; 
+        }
+
+    }
+
+    // 7 przyklad 
+
+    bool isCorrect(int number); 
+    int liczba = 150;
+    if (isCorrect(liczba) == true)
+		cout << "Prawidlowa liczba" << endl;
+    else 
+		cout << "Nieprawidlowa liczba " << endl;
+
+
+
+    // Zadanie 1 
+
+    const int tableSize = 10;
+    int tab[tableSize];
+    for (int i = 0; i < tableSize; i++)
+    {
+		cout << "Podaj wartosc dla elementu tablicy nr " << i << ": ";
+		cin >> tab[i];
+    }
+    for (int i = 9; i <= tableSize; i--)
+    {
+       
+        cout << tab[i] << endl;
+
+        if( i == 0)
+			break;
+    }
+
+
+    // Zadanie 2 
+    int n; 
+    int* tab;
+	cout << "Podaj wielkosc tablicy: ";
+    cin >> n; 
+	tab = new int[n];
+    tab[0] = 0; 
+	tab[1] = 1;
+	cout << "Pierwszy element tablicy: << tab[0] << "drugi element tablicy: " << tab[1] << endl;
+    for(int i = 2; i < n ; i++)
+    {
+        tab[i] = tab[i - 1] + tab[i - 2]; 
+		cout << "Nastepny element tablicy" << tab[i] << endl;
+	}
+*/
+
+    // Zadanie 3 
+
+    int tab[10];
+
+    return 0;
     
 }
-
-// Uruchomienie programu: Ctrl + F5 lub menu Debugowanie > Uruchom bez debugowania
-// Debugowanie programu: F5 lub menu Debugowanie > Rozpocznij debugowanie
-
-// Porady dotyczące rozpoczynania pracy:
-//   1. Użyj okna Eksploratora rozwiązań, aby dodać pliki i zarządzać nimi
-//   2. Użyj okna programu Team Explorer, aby nawiązać połączenie z kontrolą źródła
-//   3. Użyj okna Dane wyjściowe, aby sprawdzić dane wyjściowe kompilacji i inne komunikaty
-//   4. Użyj okna Lista błędów, aby zobaczyć błędy
-//   5. Wybierz pozycję Projekt > Dodaj nowy element, aby utworzyć nowe pliki kodu, lub wybierz pozycję Projekt > Dodaj istniejący element, aby dodać istniejące pliku kodu do projektu
-//   6. Aby w przyszłości ponownie otworzyć ten projekt, przejdź do pozycji Plik > Otwórz > Projekt i wybierz plik sln
