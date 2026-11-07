@@ -134,8 +134,8 @@ int main()
 
     // Zadanie 3 
 
-    int tab[10];
-
-    return 0;
+    int tablica[10]; 
+    int suma = 0; 
+    
     
 }
