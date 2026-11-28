@@ -684,8 +684,120 @@ return 0;
     }
     cout << "\nSuma liczb na przekotnej: " << suma << endl;
     return 0; 
-    */
+    
     //Zadanie 9
+
+
+
+    int tab[10];
+    for (int i = 0; i < 10; i++)
+    {
+        cout << "Podaj wartosc tablicy dla ["<< i + 1 <<"] elementu:";
+        cin >> tab[i];
+    }
+    for (int i = 0; i < 9; i++)
+    {
+        for (int j = 0; j < 9 - i; j++)
+        {
+            if (tab[j] > tab[j + 1])
+            {
+                int temp = tab[j];
+                tab[j] = tab[j + 1];
+                tab[j + 1] = temp; 
+            }
+        }
+    }
+    cout << "\nPosortowana tablica rosnoco: " << endl; 
+    for (int i = 0; i < 10; i++)
+    {
+        cout << tab[i] << " ";
+    }
+    return 0; 
+
+    */
+
+    //Zadanie 10
+
+
+
+    srand(time(NULL));
+    int tab[8][8];
+    for (int i = 0; i < 8; i++)
+    {
+        for (int j = 0; j < 8;j++)
+        {
+            tab[i][j] = rand() % 100 + 1; 
+        }
+    }
+    cout << "\ntwoja macierz: " << endl; 
+    for (int a = 0; a < 8; a++)
+    {
+        for (int b = 0; b < 8; b++)
+        {
+            cout << tab[a][b] << "\t";
+        }
+        cout << endl; 
+    }
+    
+    int suma_z_wierszy = 0;
+    int suma_z_kolumn = 0; 
+   
+
+    cout << "\n--- Sumy wierszy ---" << endl;
+
+    for (int i = 0; i < 8; i++)
+    {
+         int suma_wiersza = 0;
+         for (int j = 0; j < 8; j++)
+         {
+             suma_wiersza += tab[i][j];
+         }
+         cout << "Suma wiersza [" << i + 1 << "]:" << suma_wiersza << endl; 
+         suma_z_wierszy += suma_wiersza;
+    }
+    for (int j = 0; j < 8; j++)
+    {
+        int suma_kolumny = 0; 
+        for (int i = 0; i < 8; i++)
+        {
+            suma_kolumny += tab[i][j];
+        }
+        cout << "Suma kolumn [" << j + 1 << "]:" << suma_kolumny << endl;
+        suma_z_kolumn += suma_kolumny;
+    }
+
+    cout << "\n--- Podsumowanie ---" << endl;
+    cout << "Suma wszystkich elementow(wg wierszy): " << suma_z_wierszy << endl;
+    cout << "Suma wszystkich elementow(wg kolumn): " << suma_z_kolumn << endl;
+
+    if (suma_z_wierszy == suma_z_kolumn)
+    {
+        cout << "Weryfikacja poprawna: obie sumy sa takie same" << endl;
+    }
+    else
+    {
+        cout << "sumy roznia sie " << endl; 
+    }
+    return 0; 
+
+
+
+   
+        
+
+
+
+
+    
+
+    
+
+
+
+    
+
+
+
 
 
 
